@@ -3,7 +3,9 @@
   "name": "Caso 5 - Python / MySQL 8.4",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
   "features": {
-    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+      "moby": false
+    }
   },
   "forwardPorts": [8501, 3306],
   "portsAttributes": {
@@ -13,7 +15,7 @@
       "visibility": "private"
     },
     "3306": {
-      "label": "MySQL (solo tunel TCP privado)",
+      "label": "MySQL - tunel TCP privado",
       "onAutoForward": "silent",
       "visibility": "private"
     }
